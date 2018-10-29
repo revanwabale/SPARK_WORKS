@@ -1,0 +1,48 @@
+[
+   {
+    "name":"user_id",
+    "type":"string",
+    "mode":"required"
+   },
+   {
+    "name":"data",
+    "type": "record",
+    "mode":"repeated",
+    "fields": [
+      		{
+       		"name":"timestamp",
+       		"type": "timestamp",
+       		"mode":"required"
+      		},
+      		{
+       		"name":"apps",
+       		"type": "record",
+       		"mode":"repeated",
+       		"fields": [
+                  {
+                   "name":"apps_id",
+                   "type": "integer",
+                   "mode":"required"
+                  },
+                  {
+                   "name":"app_no",
+                   "type":"record",
+                   "mode":"repeated",
+                   "fields": [
+                     {
+                      "name":"id",
+                      "type":"integer",
+                      "mode":"required"
+                     },
+                     {
+                      "name":"pwr",
+                      "type":"float",
+                      "mode":"nullable"
+                     }
+                    ]
+                  }
+                 ]
+                }
+             ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+   {
+    "name":"user_id",
+    "type":"string",
+    "mode":"required"
+   },
+   {
+    "name":"data",
+    "type": "record",
+    "mode":"repeated",
+    "fields": [
+    {
+       "name": "timestamp",
+       "type": "timestamp",
+       "mode": "required"
+    },
+    {
+       "name": "w_hp",
+       "type": "float",
+       "mode": "nullable"
+    }
+   ]
+ }
+]
